@@ -564,7 +564,12 @@ iframe {
   display: block;
 }
 
-.redes>img{
+.redes>a{
+  text-decoration: none;
+}
+  
+
+.redes>a>img{
   width: 50px;
   height: 50px; 
   margin-left: 5%;
