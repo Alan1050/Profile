@@ -72,3 +72,32 @@
               }
             });
           });
+
+          const carousel = document.querySelector('.proyectos-carousel');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+  const projectWidth = document.querySelector('.proyecto').offsetWidth + 20; // +gap
+  carousel.style.transform = `translateX(-${currentIndex * projectWidth}px)`;
+}
+
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  const totalProjects = document.querySelectorAll('.proyecto').length;
+  if (currentIndex < totalProjects - 1) {
+    currentIndex++;
+    updateCarousel();
+  }
+});
+
+// Ajusta posición al cambiar tamaño de pantalla
+window.addEventListener('resize', updateCarousel);
