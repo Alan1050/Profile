@@ -371,6 +371,7 @@ iframe {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border: 1px solid #ffd700;
+    height: 430px;
   }
   
   .proyecto-imagen {
@@ -414,9 +415,10 @@ iframe {
   .proyecto-info {
     padding: 20px;
       display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra horizontalmente */
-  text-align: center;   /* Alinea el texto al centro también */
+      flex-direction: column;
+      align-items: center; /* Centra horizontalmente */
+      text-align: center;   /* Alinea el texto al centro también */
+      height: 100px;
   }
   
   .proyecto-info h3 {
@@ -438,6 +440,7 @@ iframe {
   margin-top: 15px; /* Espacio arriba del botón */
   text-decoration: none;
   transition: background 0.3s;
+  margin-left: 100px;
 }
   
   .btn-proyecto:hover {
@@ -760,8 +763,21 @@ iframe {
   }
 
   .proyecto-info{
-    height: 155px;
+    height: 95px;
     overflow-y: scroll;
+    margin-top: 10px;
+  }
+
+  .proyecto{
+    height: 460px;
+  }
+
+  .btn-proyecto{
+    margin-left: 20px;
+  }
+
+  .salto{
+    display: none;
   }
 }
 
